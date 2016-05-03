@@ -31,7 +31,6 @@ h1 {
 #wrapper {
   display: block;
   width: 850px;
-  height: 500px;
   background: #fff;
   margin: 0 auto;
   padding: 10px 17px;
@@ -40,16 +39,15 @@ h1 {
 
 .timePlace {
 
-  border: 1px solid black;
+  float: right;
   display: inline-block;
-  width: 300px;
-  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: right;
 }
 
 .description {
 
-  border: 1px solid black;
   display: inline-block;
-  width: 500px;
-  height: inherit;
+  width: 840px;
 }

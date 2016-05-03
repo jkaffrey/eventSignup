@@ -29,21 +29,17 @@ if(file_exists($filetxt) && isset($toRemove)) {
     <div id=\"top\">
     <div class=\"timePlace\">
     <span>On " . reformatDate($data[$toRemove]->date) . "</span><br /><br />
-    <span>Starting at: " . reformatTime($data[$toRemove]->time) . "</span><br /><br />
-    <span>Attending: " . sizeof($data[$toRemove]->attending) . "<br />";
+    <span><strong>Starting at:</strong> " . reformatTime($data[$toRemove]->time) . "</span><br /><br />
+    <span><strong>Attending: " . sizeof($data[$toRemove]->attending) . "</strong><br />";
 
     foreach($data[$toRemove]->attending as $person) {
       echo $person . "<br />";//$data[$toRemove]->attending[0]
     }
 
     echo "</span><br /><br />
-    <span>Seats Available: " . $data[$toRemove]->seats . "</span><br /><br />
-    <span>
-    <form name=\"removeElement\" method=\"POST\" action=\"modifyJSON.php\">
-    <input type=\"hidden\" name=\"element\" value=\"$toRemove\">
-    <input type=\"submit\" value=\"Remove Event\">
-    </form>
-    </span>
+    <span><strong>Seats Available: </strong>" . $data[$toRemove]->seats . "</span><br /><br />
+    </div>
+    <div class=\"actions\">
 
     <span>
     <form name=\"removeElement\" method=\"POST\" action=\"addAttending.php\">
@@ -51,10 +47,17 @@ if(file_exists($filetxt) && isset($toRemove)) {
     <input type=\"submit\" value=\"Mark Attending\">
     </form>
     </span>
+
+    <span>
+    <form name=\"removeElement\" method=\"POST\" action=\"modifyJSON.php\">
+    <input type=\"hidden\" name=\"element\" value=\"$toRemove\">
+    <input type=\"submit\" value=\"Remove Event\">
+    </form>
+    </span>
     </div>
     <div class=\"description\">
       <span>
-        Description: " . $data[$toRemove]->description . "
+        <strong>Description:</strong> " . $data[$toRemove]->description . "
       </span>
     </div>
     </div>
