@@ -45,3 +45,11 @@ h1 {
   width: 300px;
   padding: 20px;
 }
+
+.description {
+
+  border: 1px solid black;
+  display: inline-block;
+  width: 500px;
+  height: inherit;
+}

@@ -52,6 +52,11 @@ if(file_exists($filetxt) && isset($toRemove)) {
     </form>
     </span>
     </div>
+    <div class=\"description\">
+      <span>
+        Description: " . $data[$toRemove]->description . "
+      </span>
+    </div>
     </div>
     </div>
     </body>
