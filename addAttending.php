@@ -12,10 +12,13 @@ if(file_exists($filetxt) && isset($toRemove) && isset($user)) {
   $data = json_decode($jsondata);
 
   if (in_array($user, $data[$toRemove]->attending)) {
-    echo "You are already attending this event. <br />";
+    $index = array_search($user, $data[$toRemove]->attending);
+    if ($index !== false ) {
+      unset($data[$toRemove]->attending[$index]);
+    }
   } else {
     array_push($data[$toRemove]->attending, $user);
-    echo $data[$toRemove]->attending[1];
+    //echo $data[$toRemove]->attending[1];
   }
 
   $data = json_encode($data, JSON_PRETTY_PRINT);

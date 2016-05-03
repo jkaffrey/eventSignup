@@ -12,7 +12,9 @@ include('sessions.php');
   <form class="eventCreate" action="saveJson.php" method="POST">
     <ul>
       <li align="right">
-        <a href="./logout.php">Log-out</a>
+        <a href="./logout.php">Log-out</a><br />
+        <a href="./viewEvents.php">View Active Events</a><br />
+
       </li>
       <li>
         <label for="name">Name of Event</label>

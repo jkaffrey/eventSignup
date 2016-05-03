@@ -29,7 +29,7 @@ if(file_exists($filetxt)) {
   }
 
   echo "<h1>Upcoming Events</h1>";
-  echo "<div id=\"wrapper\"><table id=\"keywords\" cellspacing=\"0\" cellpadding=\"0\">";
+  echo "<div id=\"wrapper\"><a href=\"index.php\">Add Event</a><br /><table id=\"keywords\" cellspacing=\"0\" cellpadding=\"0\">";
   echo "<thead><tr><th><span>Event Name</span></th><th><span>Date</span></th><th><span>Time</span></th><th><span>Location</span></th><th><span>Description</span></th><th></th></tr></thead>";
   echo "<tbody>";
 
