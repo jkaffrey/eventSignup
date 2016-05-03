@@ -1,0 +1,15 @@
+[
+    {
+        "eventName": "Asfasfa",
+        "date": "2016-05-27",
+        "time": "21:09",
+        "location": "kslanfa",
+        "description": "sfafdsgfdsg",
+        "meetup": "asfasfadgsg",
+        "attending": [
+            "jkaffrey"
+        ],
+        "driving": "0",
+        "seats": "0"
+    }
+]
