@@ -3,7 +3,7 @@ require_once('githubAuth.php');
 require_once('functions.php');
 session_start();
 
-if (isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) {
 
   header("location: index.html");
 }

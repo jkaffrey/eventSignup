@@ -1,0 +1,9 @@
+{
+  "firebase": "g27events",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
